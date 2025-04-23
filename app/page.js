@@ -5,7 +5,9 @@ import { useTranslation } from "react-i18next";
 import { Box, Typography } from "@mui/material";
 
 export default function HomePage() {
-    const { t } = useTranslation();
+    const { t, ready } = useTranslation();
+
+    if (!ready) return null;
 
     return (
         <Box sx={{ mt: 7 }}>
