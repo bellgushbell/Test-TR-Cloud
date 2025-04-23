@@ -34,5 +34,9 @@
     "rule2": "Use any JS library to render the graphs",
     "rule3": "Display both Bar Chart and Pie Chart",
     "example": "Example"
+  },
+    "home": {
+    "title": "Entrance Exam for Technical Programming",
+    "description": "Built using JavaScript and Next.js. For testing purposes only. Not authorized for distribution. Use the hamburger menu to select a question."
   }
 }

@@ -1,8 +1,20 @@
+"use client";
+
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Box, Typography } from "@mui/material";
+
 export default function HomePage() {
+    const { t } = useTranslation();
+
     return (
-        <div>
-            <h1>Welcome to My Test App</h1>
-            <p>This is the homepage.</p>
-        </div>
+        <Box sx={{ mt: 7 }}>
+            <Typography variant="h4" gutterBottom>
+                {t("home.title")}
+            </Typography>
+            <Typography variant="body1" sx={{ maxWidth: 600 }}>
+                {t("home.description")}
+            </Typography>
+        </Box>
     );
 }

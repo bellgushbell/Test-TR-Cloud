@@ -34,6 +34,9 @@
     "rule2": "สามารถใช้ JS Library ใดก็ได้ในการแสดงผลเป็นกราฟ",
     "rule3": "แสดงผลทั้งแบบ Bar Chart และ Pie Chart",
     "example": "ตัวอย่าง"
+  },
+    "home": {
+    "title": "ข้อสอบเข้าสำหรับ Technical Programming Exam",
+    "description": "ใช้ JavaScript และ Next.js จัดทำเพื่อทดสอบเท่านั้น ไม่อนุญาตให้เผยแพร่ กดที่แฮมเบอเกอร์บาร์เพื่อเลือกข้อ"
   }
-
 }
