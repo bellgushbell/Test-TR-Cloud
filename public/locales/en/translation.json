@@ -1,0 +1,38 @@
+{
+  "header": {
+    "title": "My Test"
+  },
+  "menu": {
+    "num1": "Question 1",
+    "num2": "Question 2",
+    "num3": "Question 3",
+    "num4": "Question 4"
+  },
+  "question1": {
+    "description": "Create a web app that outputs a triangle of '*' depending on the user input integer:",
+    "even": "For even numbers, a head-up triangle.",
+    "odd": "For odd numbers, an upside-down triangle.",
+    "example": "Example"
+  },
+  "question2": {
+    "title": "Question 2",
+    "description": "Create a web app which can calculate the ratios from a user input number:",
+    "rule1": "User inputs a number in one of the five input fields.",
+    "rule2": "The app calculates the values for the other four fields according to the number given on the top.",
+    "rule3": "There must be a button to clear all fields.",
+    "example": "Example"
+  },
+    "question3": {
+    "title": "Question 3",
+    "description": "Write a code that performs the array MAPPING function similar to VLOOKUP where the input arrays are 'Array1' and 'Array2' returning 'Output' array.",
+    "example": "Example"
+  },
+     "question4": {
+    "title": "Question 4",
+    "description": "Use any JS library to display a bar chart and a pie chart from the data retrieved from the API.",
+    "rule1": "Retrieve data via AJAX from: https://www.trcloud.co/test/api.php",
+    "rule2": "Use any JS library to render the graphs",
+    "rule3": "Display both Bar Chart and Pie Chart",
+    "example": "Example"
+  }
+}
