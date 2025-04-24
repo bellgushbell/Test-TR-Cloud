@@ -24,7 +24,7 @@ import { useTranslation } from "react-i18next";
 
 ChartJS.register(BarElement, ArcElement, CategoryScale, LinearScale, Tooltip, Legend);
 
-export default function FirstPage() {
+export default function FourthPage() {
   const [data, setData] = useState([]);
   const [hasMounted, setHasMounted] = useState(false);
   const theme = useTheme();

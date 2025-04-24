@@ -31,7 +31,7 @@ const array2 = [
   { code: 101, city: "Bangkok" },
 ];
 
-// การ map แบบ VLOOKUP
+
 const output = array1.map((item) => {
   const match = array2.find((el) => el.code === item.code);
   return {
@@ -41,7 +41,7 @@ const output = array1.map((item) => {
   };
 });
 
-export default function FirstPage() {
+export default function ThirdPage() {
 
   const { t } = useTranslation();
 

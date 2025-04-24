@@ -13,12 +13,14 @@ import { useTranslation } from "react-i18next";
 
 const topValues = [100, 7, 107, 3, 104];
 
-export default function FirstPage() {
+export default function SecondPage() {
   const [inputValues, setInputValues] = useState(["", "", "", "", ""]);
   const [calculatedValues, setCalculatedValues] = useState(["", "", "", "", ""]);
   const [errorMessage, setErrorMessage] = useState("");
   const [calculated, setCalculated] = useState(false);
   const [sourceIndex, setSourceIndex] = useState(null);
+  const { t } = useTranslation();
+
   const handleChange = (index, input) => {
     const newInputs = [...inputValues];
     newInputs[index] = input;
@@ -27,7 +29,7 @@ export default function FirstPage() {
     setCalculated(false);
     setSourceIndex(null);
   };
-  const { t } = useTranslation();
+
 
   const handleGo = () => {
     const filled = inputValues.filter((v) => v !== "");
@@ -105,16 +107,12 @@ export default function FirstPage() {
                   fullWidth
                   variant="standard"
                   value={
-                    inputValues[index] !== ""
-                      ? inputValues[index]
-                      : (calculated && sourceIndex !== null && index !== sourceIndex
-                          ? calculatedValues[index]
-                          : "")
-                  }
+                      inputValues[index] !== ""
+                        ? inputValues[index] : (calculated && index !== sourceIndex
+                        ? calculatedValues[index] : "")
+                    }
+
                   onChange={(e) => handleChange(index, e.target.value)}
-                  inputProps={{
-                    style: { textAlign: "center" },
-                  }}
                 />
               </td>
             ))}
